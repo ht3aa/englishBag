@@ -25,7 +25,7 @@ export default function NavBar() {
   return (
     <nav className={navBarStyles.navbar}>
       <div className={navBarStyles.logoBox}>
-        <Image src="/university.webp" alt="Logo" width={50} height={50} />
+        <Image src="/university.png" alt="Logo" width={50} height={50} />
         <p>كلية الأمام الكاظم/قسم هندسة تقنيات الحاسوب</p>
       </div>
       <ul
