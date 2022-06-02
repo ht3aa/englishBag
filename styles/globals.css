@@ -126,7 +126,7 @@ footer p {
 }
 .downloadBtn {
   position: fixed;
-  right: 30px;
+  left: 30px;
   bottom: 40px;
   padding: 10px;
 }
