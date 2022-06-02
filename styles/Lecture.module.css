@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 64px;
+  background-color: #080d18;
+}
+
+.container object {
+  width: 60%;
+  min-width: 350px;
+  text-align: center;
+  background-color: white;
+}
+
+.container h5 {
+  color: black;
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+.container a {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    padding-left: 0px;
+    height: auto;
+  }
+  .container object {
+    margin: 20px auto;
+  }
+}

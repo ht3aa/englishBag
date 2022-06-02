@@ -1,0 +1,199 @@
+.hero {
+  width: 100%;
+  background: url("/bg_img.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero svg {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  color: white;
+  font-size: 30px;
+  animation: upDown 2s ease-in-out infinite;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -50px);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+.overlayer {
+  width: 100%;
+  padding: 130px 0;
+  background-color: rgba(20, 33, 61, 0.75);
+  display: flex;
+}
+
+.logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContent {
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  padding-right: 50px;
+  justify-content: center;
+  color: white;
+}
+
+.mainContent h4 {
+  width: 70%;
+  font-weight: normal;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.mainContent h5 {
+  font-weight: normal;
+}
+.mainContent a {
+  width: max-content;
+}
+.mainContent button {
+  width: 120px;
+}
+
+@media only screen and (max-width: 700px) {
+  .overlayer {
+    padding: 100px 0px;
+  }
+  .logo {
+    display: none;
+  }
+
+  .mainContent {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .mainContent h4 {
+    margin: 25px auto;
+  }
+  .mainContent a {
+    margin: 0 auto;
+  }
+}
+
+/* =============================================== */
+
+.whyEnglishContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.whyEnglishContent {
+  width: 45%;
+  direction: rtl;
+  padding-top: 30px;
+}
+.whyEnglishContent h2 {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .whyEnglishContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  .whyEnglishContent {
+    width: 80%;
+    text-align: center;
+  }
+}
+/* =============================================== */
+
+.mainContainer {
+  width: 95%;
+  margin: 20px auto;
+}
+
+.title {
+  width: max-content;
+  margin: 40px auto;
+  padding: 10px;
+  border-bottom: 2px solid black;
+}
+
+.cardContainer {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+}
+
+.card {
+  width: 280px;
+  background-color: white;
+  margin-bottom: 20px;
+  border: 1px solid var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+.card:hover,
+.card:focus {
+  box-shadow: 0px 4px 8px rgba(102, 102, 102, 0.5);
+}
+@media only screen and (max-width: 760px) {
+  .cardContainer {
+    justify-content: center;
+  }
+}
+
+.cardImg {
+  width: 100%;
+  height: 150px;
+  background: url("/america_flag_card.png") center center;
+  background-size: contain;
+}
+
+.cardContent {
+  width: 100%;
+  padding: 20px;
+  min-width: 175px;
+  direction: rtl;
+  text-align: center;
+}
+
+.cardContent p {
+  margin: 15px 0;
+}
+
+.cardContent button {
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+
+.cardOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 33, 61, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media only screen and (max-width: 410px) {
+  .cardContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
