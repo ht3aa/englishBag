@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  background: url("/bg_img.png") center center no-repeat;
+  background: url("/bg_img2.png") center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -28,7 +28,7 @@
 .overlayer {
   width: 100%;
   padding: 130px 0;
-  background-color: rgba(20, 33, 61, 0.75);
+  background-color: rgba(0, 0, 0, 0.466);
   display: flex;
 }
 
@@ -119,8 +119,10 @@
 /* =============================================== */
 
 .mainContainer {
-  width: 95%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 20px auto 0 auto;
+  padding-bottom: 20px;
+  background-color: #e5e5e5;
 }
 
 .title {
